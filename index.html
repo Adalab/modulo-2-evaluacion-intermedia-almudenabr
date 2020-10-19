@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>M2 Evaluación intermedia</title>
-</head>
-<body>
-  <main>
-    <h1>Adivina el número</h1>
-    <form>
-      <label for="number">Introduce aquí tu número:</label>
-      <input class="js-input" id="number" type="text" name="number">
-      <input class="js-btn" type="button" value="Prueba"/>
-      <input class="js-clue" value="Pista: Excribe el número y dale a Prueba" type="text" name="clue"/>
-      <input class="js-attempts" value="Número de intentos:0" type="text" name="attempts"/>
-    </form>
-  </main>
-  <script type="text/javascript" src="./main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M2 Evaluación intermedia</title>
+  </head>
+  <body>
+    <header>
+      <h1>Adivina el número</h1>
+    </header>
+    <main>
+      <form>
+        <label for="number">Introduce aquí tu número:</label>
+        <input class="js-number" id="number" type="text" name="number" />
+        <input class="js-btn" type="button" value="Prueba" />
+        <p class="js-clue">Pista: Escribe el número y dale a Prueba"</p>
+        <p class="js-attempts">Número de intentos: 0</p>
+      </form>
+    </main>
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
 </html>
