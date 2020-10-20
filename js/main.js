@@ -4,7 +4,11 @@ const inputNumber = document.querySelector(".js-number");
 const btn = document.querySelector(".js-btn"); // button
 const random = getRandomNumber(100); // nº aleatorio
 const clue = document.querySelector(".js-clue"); // pista
-const attempts = document.querySelector(".js-attempts"); // nº intentos
+
+//pr nº intentos
+let counterClick = 0; // variable que inicia en 0 y va a ir sumando y guardando los intentos que hagamos
+const attempts = document.querySelector(".js-attempts");
+let isFinished = false;
 
 //nº aleatorio generado
 function getRandomNumber(max) {
@@ -15,6 +19,7 @@ function getRandomNumber(max) {
 function showNumber() {
   if (isFinished == false) {
     // para que termine el contador
+
     const inputValue = parseInt(inputNumber.value); // convierto la cadena de caracteres recibida a int
 
     if (inputValue > 0 && inputValue <= 100) {
@@ -37,9 +42,7 @@ function showNumber() {
   }
 }
 
-//nº intentos
-let counterClick = 0; // variable que inicia en 0 y va a ir sumando y guardando los intentos que hagamos
-let isFinished = false;
+// nº intentos
 
 function counter() {
   counterClick = counterClick + 1;
